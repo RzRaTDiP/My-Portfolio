@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <script src="/JS/script.js"></script>
+</head>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>I want to be Front End Developer</em></p>
+  <p>I created this website as a practice exercise for web development because I'm interested in this field. If there are any mistakes, 
+    please feel free to offer suggestions and feedback as appropriate.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Ratchanon Phatipreechakul</b></p><br>
+      <img src="/Photo/profile.jpg" class="w3-round w3-hover-opacity-off" alt="Photo of Me" width="400" height="550">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Welcome to my website. My name is Ratchanon Phatipreechakul, my nickname is Adib, and I am 22 years old. I am not a very talkative person, 
+        but I become very talkative once I get close to someone. I get along well with people and am easygoing. My favorite color is pastel blue. 
+        In my free time, I enjoy taking photos, listening to music, playing games, and reading. I once dreamed of becoming a pro player in a game, 
+        but I failed. So, I turned my attention to coding and am currently interested in front-end development and want to become a web developer. 
+        I am learning the basics, so you could say I am just starting out with HTML, CSS, and Java. Please feel free to give me feedback and suggestions 
+        if I make any mistakes. In the future, I plan to study back-end development as well so that I can become a full-stack developer. Thank you for your support.</p>
+    </div>
+  </div>
+  <!-- เพิ่มประวัติการศึกษาที่นี่ -->
+  <div class="education-box w3-row w3-padding-32" style="align-items:center;">
+    <div class="w3-col m4 w3-center w3-padding-large">
+      <img src="/Photo/education.png" alt="Education" style="width:200px; border-radius: 10px;  border: 1px solid #ddd;">
+    </div>
+    <div class="w3-col m8 w3-padding-large">
+      <p style="margin-bottom:8px;"><b>Bangkok University</b></p>
+      <p style="margin-bottom:8px;">Faculty of Information Technology, Computer Science</p>
+      <p style="margin-bottom:8px;">GPA: 3.23</p>
+      <p style="margin-bottom:8px;">Year of Study: 2022-2026</p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">My Skill</p>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Front-End</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:60%">60%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-code"></i>Back-End</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:40%">40%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-database"></i>Data Analytics</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:35%">35%</div>
+  </div>
+</div>
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my latest </em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="/Photo/work1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Twitch Analytics">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/Photo/work2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Unimax(Mobile app)">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/Photo/work3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Deep learning food classifier">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/Photo/work4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Web design(Job application)">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/Photo/work5.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Web design(Job Form registration)">
+    </div>
+
+  </div>
+  <div class="w3-center">
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE I WORK</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="/Photo/contact.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Bangkok, TH<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +66 0982720421<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: Ratthanon9@gmail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/profile.php?id=61573421614398" target="_blank">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    </a>
+    <a href="https://www.instagram.com/rzratdip/" target="_blank">
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/ratchanon-phatipreechakul-263546310/" target="_blank">
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </a>
+  </div>
+</footer>
+</body>
+</html>
