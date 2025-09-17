@@ -4,10 +4,10 @@
   <title>Portfolio</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="JS/script.js"></script>
+  <link rel="stylesheet" href="/CSS/style.css">
+  <script src="/JS/script.js"></script>
 </head>
 
 <body>
@@ -74,21 +74,38 @@
       <p style="margin-bottom:8px;"><b>Bangkok University</b></p>
       <p style="margin-bottom:8px;">Faculty of Information Technology, Computer Science</p>
       <p style="margin-bottom:8px;">GPA: 3.23</p>
-      <p style="margin-bottom:8px;">Year of Study: 2022-2026</p>
+      <p style="margin-bottom:8px;">Year of Study: 2022-Present</p>
     </div>
   </div>
   <p class="w3-large w3-center w3-padding-16">My Skill</p>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Front-End</p>
+  <p class="w3-wide"><i class="fa fa-html5" style="color:#e44d26"></i> HTML</p>
   <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:60%">60%</div>
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
   </div>
-  <p class="w3-wide"><i class="fa fa-code"></i>Back-End</p>
+  <p class="w3-wide"><i class="fa fa-css3" style="color:#264de4"></i> CSS</p>
   <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:40%">40%</div>
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%">70%</div>
   </div>
-  <p class="w3-wide"><i class="fa fa-database"></i>Data Analytics</p>
+  <p class="w3-wide"><i class="fa fa-code" style="color:#f7df1e"></i> JavaScript</p>
   <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:35%">35%</div>
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:50%">50%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-code" style="color:#3776ab"></i> Python</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:50%">50%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-database" style="color:#00618a"></i> SQL</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:30%">30%</div>
+  </div>
+
+  <!-- เพิ่ม Tool Section -->
+  <p class="w3-large w3-center w3-padding-16">Tool</p>
+  <div class="w3-center tool-icons" style="margin-bottom:32px;">
+    <img src="Photo/vscode.png" alt="VSCode" title="VS Code">
+    <img src="Photo/mysql.png" alt="MySQL" title="MySQL">
+    <img src="Photo/figma.png" alt="Figma" title="Figma">
+    <img src="Photo/powerbi.png" alt="Power BI" title="Power BI">
   </div>
 </div>
 
@@ -108,37 +125,52 @@
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="Photo/work1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Twitch Analytics">
+      <img src="Photo/work1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+        alt="Twitch Analytics"
+        data-title="Twitch Analytics"
+        data-desc="A dashboard for analyzing Twitch streaming data, providing insights into viewer trends and streamer performance.">
     </div>
 
     <div class="w3-col m3">
-      <img src="Photo/work2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Unimax(Mobile app)">
+      <img src="Photo/work2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+        alt="Unimax (Mobile app)"
+        data-title="Unimax (Mobile app)"
+        data-desc="A movie ticket booking app that includes features like membership registration, login, real-time movie showtimes, seat selection, and the main movie ticket after booking is complete.">
     </div>
 
     <div class="w3-col m3">
-      <img src="Photo/work3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Deep learning food classifier">
+      <img src="Photo/work3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+        alt="Deep Learning Food Classifier"
+        data-title="Deep Learning Food Classifier"
+        data-desc="This is deep learning trained to classify food, identifying what a dish is and what it's called. It's developed for future use, potentially in a nutrient management app or an app to check nutritional value.">
     </div>
 
     <div class="w3-col m3">
-      <img src="Photo/work4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Web design(Job application)">
+      <img src="Photo/work4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+        alt="Web Design (Job Application)"
+        data-title="Web Design (Job Application)"
+        data-desc="A responsive web design for job application platforms, focusing on user experience and modern UI trends.">
     </div>
 
     <div class="w3-col m3">
-      <img src="Photo/work5.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Web design(Job Form registration)">
+      <img src="Photo/work5.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+        alt="Web Design (Job Form Registration)"
+        data-title="Web Design (Job Form Registration)"
+        data-desc="A web form registration system for job seekers, featuring validation, accessibility, and a clean interface.">
     </div>
-
   </div>
-  <div class="w3-center">
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-  </div>
+
 </div>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
+  <div class="w3-modal-content w3-animate-zoom w3-transparent w3-padding-64" style="display:flex; align-items:center; justify-content:center; background:transparent; box-shadow:none;">
+    <img id="img01" class="w3-image" style="max-width:500px; max-height:600px; border-radius:10px; background:#fff;">
+    <div id="work-desc" style="color:#fff; text-align:left; margin-left:32px; max-width:400px;">
+      <h3 id="work-title" style="margin-top:0;"></h3>
+      <p id="work-detail"></p>
+    </div>
   </div>
 </div>
 
@@ -200,9 +232,3 @@
 </footer>
 </body>
 </html>
-
-
-
-
-
-
