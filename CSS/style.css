@@ -1,4 +1,4 @@
-/* style.css update */
+/* style.css */
 body,
 h1,
 h2,
@@ -32,16 +32,17 @@ html {
   min-height: 100%;
 }
 
+/* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url('../Photo/bg1.jpg');
+  background-image: url("../Photo/bg1.jpg");
   min-height: 400px;
 }
 
+/* Third image (Contact) */
 .bgimg-3 {
-  background-image: url('../Photo/bg3.jpg');
+  background-image: url("../Photo/bg3.jpg");
   min-height: 400px;
 }
-
 
 .w3-wide {
   letter-spacing: 10px;
@@ -2184,10 +2185,12 @@ w3-hover-cobalt:hover {
 
 .education-box p {
   color: #fff;
-
 }
 
-
-
-
-
+/* Tool icons size for Tool section */
+.tool-icons img {
+  width: 72px;
+  height: 72px;
+  margin: 0 16px;
+  vertical-align: middle;
+}
