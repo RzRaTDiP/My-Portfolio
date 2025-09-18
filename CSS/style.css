@@ -2166,31 +2166,188 @@ w3-hover-cobalt:hover {
   border-color: #e7ffff !important
 }
  
-.w3-col.m3 img {
+.w3-col.m3 img,
+.work-card img {
+  border: 2.5px solid #ccc;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+/* กำหนดขนาดและกรอบให้รูปผลงานเท่ากันทุกอัน */
+.work-img {
   width: 100%;
-  height: 220px;
-  /* ปรับความสูงตามต้องการ */
+  aspect-ratio: 16/10; /* หรือ 4/3, 16/9 ตามต้องการ */
   object-fit: cover;
+  border: 2.5px solid #ccc;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  margin-bottom: 0;
   display: block;
+}
+
+/* ปรับ work-card ให้ไม่มี background สีขาวซ้อน */
+.work-card {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ปรับ grid ให้ spacing สวย */
+.w3-row-padding {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 32px;
+  justify-content: center;
+}
+
+.w3-col.m3 {
+  flex: 0 0 calc(25% - 32px);
+  box-sizing: border-box;
+  margin-bottom: 0 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Responsive: 2 columns on mobile */
+@media (max-width: 900px) {
+  .w3-col.m3 {
+    flex: 0 0 calc(50% - 32px);
+  }
+}
+@media (max-width: 600px) {
+  .w3-col.m3 {
+    flex: 0 0 100%;
+  }
+  .work-img {
+    aspect-ratio: 16/12;
+  }
+}
+
+/* เฉพาะไอคอน Tool */
+.tool-img {
+  width: 72px;
+  height: 72px;
+  margin: 0 16px;
+  object-fit: contain;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  border-radius: 12px;
+  display: inline-block;
+  aspect-ratio: unset;
 }
 
 .education-box {
   border: 2px solid #ccc;
   border-radius: 12px;
-  background: #4d4b4b; /* เปลี่ยนเป็นสีเทาเข้มขึ้น */
+  background: #575555; /* สีเทาเข้มขึ้น */
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   margin-bottom: 32px;
-  padding: 16px 0;
+  padding: 32px 24px;
+  display: flex;
+  align-items: center;
 }
-
 .education-box p {
   color: #fff;
+  font-size: 18px;
+}
+.education-box img {
+  /* background: #fff;  <-- ลบออก */
+  padding: 12px;
+  border-radius: 10px;
+  width: 200px;
+  margin-right: 32px;
+  border: 2px solid #eee; /* เพิ่มกรอบบางๆ */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-/* Tool icons size for Tool section */
-.tool-icons img {
-  width: 72px;
-  height: 72px;
-  margin: 0 16px;
-  vertical-align: middle;
+.education-box.education-vertical {
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.education-img-large {
+  width: 300px;   /* เดิม 140px */
+  height: auto;
+  margin-bottom: 20px;
+  margin-right: 0;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #eee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  
+  display: block;
+}
+.education-detail p {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+
+.contact-box {
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background: #575555;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 32px;
+  padding: 32px 24px;
+  display: flex;
+  align-items: center;
+}
+.contact-box p,
+.contact-box .w3-large {
+  color: #fff;
+  font-size: 18px;
+}
+.contact-box img {
+  padding: 12px;
+  border-radius: 10px;
+  width: 200px;
+  margin-right: 32px;
+  border: 2px solid #eee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.contact-box i {
+  color: #fff;
+}
+.section-box {
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background: #575555;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 32px;
+  padding: 32px 24px;
+  color: #fff;
+}
+.section-box h3,
+.section-box p,
+.section-box .w3-large,
+.section-box .w3-wide {
+  color: #fff !important;
+}
+
+.info-list {
+  color: #fff;
+  font-size: 18px;
+  
+  margin-bottom: 0;
+}
+.info-list li {
+  margin-bottom: 8px;
+  font-size: 18px;
+  
+  color: #fff;
+}
+.info-list b {
+  color: #fff;
 }
